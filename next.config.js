@@ -4,11 +4,11 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: "/(.*)\\.svg",
+        source: "/(.*)\\.png",
         headers: [
           {
             key: "Cache-Control",
-            value: "public, max-age=86400", // Cache SVGs for 1 day (86400 seconds)
+            value: "public, max-age=86400", // Cache PNG's for 1 day (86400 seconds)
           },
           {
             key: "Expires",
